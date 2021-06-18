@@ -1,0 +1,52 @@
+<div class="table-responsive caption-top">
+    <caption>Перечень лекарственных препаратов для медицинского применения, зарегистрированных на территории Российской Федерации, с указанием средних суточных и курсовых доз</caption>
+    <table class="table align-middle table-striped table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Код</th>
+                <th scope="col">Анатомо-терапевтическо-химическая классификация</th>
+                <th scope="col">Наименование лекарственного препарата*(3)</th>
+                <th scope="col">Использован</th>
+                <th scope="col">Единицы измерения</th>
+                <th scope="col">Дозировка</th>
+                <th scope="col">Количество доз</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">А02ВС</th>
+                <td>Ингибиторы протонового насоса</td>
+                <td>Омепразол</td>
+                <td>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="В01.023.001" id="В01.023.001_Radio1" value="yes" required>
+                        <label class="form-check-label" for="В01.023.001_Radio1">Да</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="В01.023.001" id="В01.023.001_Radio2" value="no" required>
+                        <label class="form-check-label" for="В01.023.001_Radio2">Нет</label>
+                    </div>
+                </td>
+                <td>Мг</td>
+                <td>
+                    <label for="В01.023.001_Slider" class="form-label" id="В01.023.001_Slider_label">1 </label>
+                    <input name="В01.023.001" type="range" class="form-range" min="1" max="5" step="1" value="1" id="В01.023.001_Slider" onchange="showValue_(this.value)">
+                    <script type="text/javascript ">
+                        function showValue_(newValue) {
+                            document.getElementById("В01.023.001_Slider_label").innerHTML = newValue;
+                        }
+                    </script>
+                </td>
+                <td>
+                    <label for="В01.023.001_Slider" class="form-label" id="В01.023.001_Slider_label">1 </label>
+                    <input name="В01.023.001" type="range" class="form-range" min="1" max="5" step="1" value="1" id="В01.023.001_Slider" onchange="showValue_(this.value)">
+                    <script type="text/javascript ">
+                        function showValue_(newValue) {
+                            document.getElementById("В01.023.001_Slider_label").innerHTML = newValue;
+                        }
+                    </script>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
