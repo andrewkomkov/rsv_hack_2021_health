@@ -6,7 +6,7 @@
     </div>
     <div class="row">
         <div class="col-sm-8">
-            <h3> 1. Медицинские мероприятия для диагностики заболевания, состояния </h3>
+            <h3>Законченные случаи</h3>
             </p>
             <form name="form_1" class="row g-3 needs-validation" method="post" novalidate>
                 {% csrf_token %}
@@ -17,50 +17,92 @@
                         <p></p>
                     </div>
                     <!-- Таблица со списком необходимых проверок -->
-                    <div class="list-group list-group-item">
+<!--                     <div class="list-group list-group-item">
                         {{table_labmet|safe}}
                         <p></p>
-                    </div>
+                    </div> -->
                     <!-- Таблица со списком необходимых проверок -->
-                    <div class="list-group list-group-item">
+<!--                     <div class="list-group list-group-item">
                         {{table_instr_metody|safe}}
                         <p></p>
-                    </div>
+                    </div> -->
                     <!-- Таблица со списком необходимых проверок -->
-                    <div class="list-group list-group-item">
+<!--                     <div class="list-group list-group-item">
                         {{table_innye_metody|safe}}
                         <p></p>
                     </div>
-                    <p></p>
+                    <p></p> -->
                     <!-- Таблица со списком необходимых проверок -->
-                    <h3> 3. Перечень лекарственных препаратов для медицинского применения, зарегистрированных на территории Российской Федерации, с указанием средних суточных и курсовых доз </h3>
+<!--                     <h3> 3. Перечень лекарственных препаратов для медицинского применения, зарегистрированных на территории Российской Федерации, с указанием средних суточных и курсовых доз </h3>
                     <div class="list-group list-group-item">
                         {{table_learstv|safe}}
                         <p></p>
-                    </div>
+                    </div> -->
 
                 </div>
-                <button class="btn btn-primary" type="submit">Submit form</button>
             </form>
 
         </div>
         <div class="col-sm-4 ">
-            <h3> Список нормативной документации </h3>
+            <h3>Выбор параметров</h3>
             </p>
-            <div class="list-group ">
-                <a href="# " class="list-group-item list-group-item-action ">
-                    <div class="d-flex w-100 justify-content-between ">
+            <div class="list-group list-group-item">
+                
+                <div class="list-group ">
+                    <label >Пол</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>муж.</option>
+                      <option value="1">муж.</option>
+                      <option value="2">жен.</option>
+                    </select>  
+            
+                    <label for="start">Дата поступления(от, до)</label>
+                    <input type="date" id="start" name="trip-start"
+                           value="от"
+                           min="2021-01-01" max="2021-06-31">              
+                    <input type="date" id="start" name="trip-start"
+                           value="до"
+                           min="2021-01-01" max="2021-06-31">
+
+                    <label for="start">Дата закрытия(от, до)</label>
+                    <input type="date" id="start" name="trip-start"
+                           value="от"
+                           min="2021-01-01" max="2021-06-31">              
+                    <input type="date" id="start" name="trip-start"
+                           value="до"
+                           min="2021-01-01" max="2021-06-31">
+
+                    <label for="start">Возраст(от, до)</label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="от" aria-label="от">
+                      <input type="text" class="form-control" placeholder="до" aria-label="до">
+                    </div> 
+
+                    <label for="start">Диагноз</label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="" aria-label="">
+                    </div>  
+                    <label for="start">МКБ</label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="I" aria-label="I">
+                    </div>
+                </div>
+
+            </div>   
+            <button class="btn btn-primary" type="submit">Обновить данные</button> 
+
+<!--                     <div class="d-flex w-100 justify-content-between ">
                         <h5 class="mb-1 ">Приказ № 1497н</h5>
                     </div>
                     <p class="mb-1 ">"Об утверждении стандарта специализированной медицинской помощи при поражениях лицевого нерва"</p>
-                    <small class="text-muted ">Нажмите для просмотра.</small>
+                    <small class="text-muted ">Нажмите для просмотра.</small> -->
                 </a>
             </div>
         </div>
     </div>
 </div>
 
-
+<!-- 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>
     function analyzeText() {
@@ -86,6 +128,6 @@
 
 
 
-</div>
+</div> -->
 
  {% endblock %}

@@ -1,18 +1,140 @@
 <div class="table-responsive caption-top">
-    <caption>Прием (осмотр, консультация) врача-специалиста</caption>
-    <table class="table align-middle table-striped table-hover">
+    <caption>Законченные случаи болезни</caption>
+    <table class="table align-middle table-hover">
         <thead>
             <tr>
-                <th scope="col">Код</th>
-                <th scope="col">Название</th>
-                <th scope="col">Проведён</th>
-                <th scope="col">Количество</th>
+            	<th scope="col">Номер карты</th>
+                <th scope="col">ФИО</th>
+                <th scope="col">Диагноз</th>
+                <th scope="col">Код МКБ</th>
+                <th scope="col">Пол</th>
+                <th scope="col">Возраст</th>
+                <th scope="col">Дата поступления</th>
+                <th scope="col">Дата закрытия</th>
             </tr>
         </thead>
         <tbody>
+            <tr class="table-light">
+            	<th scope="row">0</th>
+                <td>Петров Павел Иванович</td>
+                <td>Фибриляция и трепетание предсердий</td>
+                <td>I48</td>
+                <td>муж.</td>
+                <td>48</td>
+                <td>1.01.2021</td>
+                <td>21.01.2021</td>
+            </tr>
+            <tr class="table-warning">
+            	<th scope="row">1</th>
+                <td>Иванов Сергей Иванович</td>
+                <td>Сердечная недостаточность</td>
+                <td>I50</td>
+                <td>муж.</td>
+                <td>30</td>
+                <td>1.02.2021</td>
+                <td>21.02.2021</td>
+            </tr>
             <tr>
-                <th scope="row">В01.023.001</th>
-                <td>Прием (осмотр, консультация) врача-невролога первичный</td>
+            	<th scope="row">2</th>
+                <td>Сергеева Анна Владимировна</td>
+                <td>Внезапная сердечная смерть</td>
+                <td>I46.1</td>
+                <td>жен.</td>
+                <td>61</td>
+                <td>2.02.2021</td>
+                <td>15.05.2021</td>
+            </tr>
+            <tr class="table-info">
+            	<th scope="row">3</th>
+                <td>Калинина Ольга Сергеевна</td>
+                <td>Легочная эмболия</td>
+                <td>I26</td>
+                <td>жен.</td>
+                <td>57</td>
+                <td>5.02.2021</td>
+                <td>15.03.2021</td>
+            </tr>
+            <tr class="table-danger">
+            	<th scope="row">4</th>
+                <td>Кашин Владимир Петрович</td>
+                <td>Инсульт, не уточненный как кровоизлияние или инфаркт</td>
+                <td>I64</td>
+                <td>муж.</td>
+                <td>57</td>
+                <td>1.03.2021</td>
+                <td>15.06.2021</td>
+            </tr>
+            <tr class="table-warning">
+            	<th scope="row">5</th>
+                <td>Полевой Вадим Александрович</td>
+                <td>Наджелудочковая тахикардия</td>
+                <td>I47.1</td>
+                <td>муж.</td>
+                <td>37</td>
+                <td>2.03.2021</td>
+                <td>15.03.2021</td>
+            </tr>
+            <tr class="table-light">
+            	<th scope="row">6</th>
+                <td>Александров Владимир Алексеевич</td>
+                <td>Расслоение аорты</td>
+                <td>I71.0</td>
+                <td>муж.</td>
+                <td>54</td>
+                <td>3.03.2021</td>
+                <td>15.04.2021</td>
+            </tr>
+            <tr class="table-light">
+            	<th scope="row">7</th>
+                <td>Ерофеев Алексей Петрович</td>
+                <td>Желудочковая тахикардия</td>
+                <td>I47.2</td>
+                <td>муж.</td>
+                <td>38</td>
+                <td>3.03.2021</td>
+                <td>15.04.2021</td>
+            </tr>
+            <tr class="table-light">
+            	<th scope="row">8</th>
+                <td>Кошкина Наталия Валерьевна</td>
+                <td>Инсульт, не уточненный как кровоизлияние или инфаркт</td>
+                <td>I64</td>
+                <td>жен.</td>
+                <td>53</td>
+                <td>1.04.2021</td>
+                <td>15.06.2021</td>
+            </tr>
+            <tr class="table-warning">
+            	<th scope="row">9</th>
+                <td>Андреева Александра Даниловна</td>
+                <td>Расслоение аорты</td>
+                <td>I71.0</td>
+                <td>жен.</td>
+                <td>48</td>
+                <td>2.04.2021</td>
+                <td>15.06.2021</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+<!-- <div class="table-responsive caption-top">
+    <caption>Законченные случаи болезни</caption>
+    <table class="table align-middle table-striped table-hover">
+        <thead>
+            <tr>
+                <th scope="col">ФИО</th>
+                <th scope="col">Заболевание</th>
+                <th scope="col">Пол</th>
+                <th scope="col">Состояние</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-secondary">
+                <th scope="row">Петров Павел Иванович</th>
+                <td>Инсульт</td>
                 <td>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="В01.023.001" id="В01.023.001_Radio1" value="yes" required>
@@ -35,4 +157,4 @@
             </tr>
         </tbody>
     </table>
-</div>
+</div> -->

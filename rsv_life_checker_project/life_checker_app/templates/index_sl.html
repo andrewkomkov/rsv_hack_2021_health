@@ -1,0 +1,54 @@
+{% extends "base.html" %} {% block title %}My amazing blog{% endblock %} {% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        </p>
+    </div>
+    <div class="row">
+        <div class="col-sm-8">            
+            </p>
+            <form name="form_1" class="row g-3 needs-validation" method="post" novalidate>
+                {% csrf_token %}
+                <div class="container-fluid">
+                    <h3>Медицинская карта</h3>
+                    <!-- Таблица со списком необходимых проверок -->
+                    <div class="list-group list-group-item">
+                        {{table_innye_metody|safe}}
+                        <p></p>
+                    </div>
+                    <p></p>
+                    <!-- Таблица со списком необходимых проверок -->
+                    <h3>Медцинские услуги</h3>
+                    <div class="list-group list-group-item">
+                        {{table_labmet|safe}}
+                        <p></p>
+                    </div>
+                    <p></p>
+                    <!-- Таблица со списком необходимых проверок -->
+                    <h3>Перечень лекарственных препаратов для медицинского применения, зарегистрированных на территории Российской Федерации</h3>
+                    <div class="list-group list-group-item">
+                        {{table_learstv|safe}}
+                        <p></p>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+        <div class="col-sm-4 ">
+            <h3>Нормативная документация</h3>
+            </p>
+            <div class="list-group list-group-item">
+                <a href="#" class="btn btn-primary stretched-link">Приказ Министерства здравоохранения Российской Федерации от 20 декабря 2012 г. № 1282н "Об утверждении стандарта скорой медицинской помощи при инсульте"</a>
+                
+            </div> 
+            <button class="btn btn-primary" type="submit">Обновить данные</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ {% endblock %}
