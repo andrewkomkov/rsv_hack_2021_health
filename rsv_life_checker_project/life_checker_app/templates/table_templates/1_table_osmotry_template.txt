@@ -55,14 +55,17 @@
                 <td>15.03.2021</td>
             </tr>
             <tr class="table-danger">
+            	
             	<th scope="row">4</th>
-                <td>Кашин Владимир Петрович</td>
+                <td><a href="https://app.komkov.tk/life_checker_app/s/#" class="link-dark">Кашин Владимир Петрович</a></td>
                 <td>Инсульт, не уточненный как кровоизлияние или инфаркт</td>
                 <td>I64</td>
                 <td>муж.</td>
                 <td>57</td>
                 <td>1.03.2021</td>
                 <td>15.06.2021</td>
+            	
+
             </tr>
             <tr class="table-warning">
             	<th scope="row">5</th>
