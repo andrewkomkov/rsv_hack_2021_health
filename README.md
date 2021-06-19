@@ -38,7 +38,3 @@ python manage.py runserver
 
 После этого сервис станет доступен по ссылке:
 http://127.0.0.1:8000/life_checker_app/r/
-
-РАЗРАБОТЧИКИ
-
-Иванов Иван fullstack https://t.me/test@name1
