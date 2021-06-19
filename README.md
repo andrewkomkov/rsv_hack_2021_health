@@ -32,9 +32,12 @@ https://www.digitalocean.com/community/tutorialshow-to-install-the-django-web-fr
 Старт сервиса:
 
 Необходимо перейти в директорию проекта:
-cd /rsv_hack_2021_health/rsv_life_checker_project
+cd rsv_life_checker_project
 и выполнить: 
-python3 manage.py runserver
+python manage.py runserver
+
+После этого сервис станет доступен по ссылке:
+http://127.0.0.1:8000/life_checker_app/r/
 
 РАЗРАБОТЧИКИ
 
